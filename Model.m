@@ -46,7 +46,7 @@ Ts_V = nan(LAll_N,100);
 
 
 x = 0.1:0.1:10;
-y = gaussmf(x,[0.03 5])*5;
+y = [zeros(1,49) 5 zeros(1,50)];  %y = gaussmf(x,[0.03 5])*5;
 if strcmp(InputType,'Inhibitory')
     y = -y;
 end
@@ -172,8 +172,10 @@ for counterParamExplor = 1:size(ParamExplor_NGaussians,2)
         Ts_V = nan(LAll_N,100);
         
         
-        x = 0.1:0.1:10;
-        y = gaussmf(x,[0.03 5])*5;%*10
+        y = [zeros(1,49) 5 zeros(1,50)]; 
+        
+        %x = 0.1:0.1:10;
+        %y = gaussmf(x,[0.03 5])*5;
         if strcmp(InputType,'Inhibitory')
             y = -y;
         end
@@ -323,8 +325,10 @@ for counterParamExplor = 1:size(ParamExplor_Jitter,2)
         Ts_V = nan(LAll_N,100);
         
         
-        x = 0.1:0.1:10;
-        y = gaussmf(x,[0.03 5])*5;%*10
+        y = [zeros(1,49) 5 zeros(1,50)]; 
+        
+        %x = 0.1:0.1:10;
+        %y = gaussmf(x,[0.03 5])*5;
         if strcmp(InputType,'Inhibitory')
             y = -y;
         end
@@ -485,8 +489,10 @@ for counterParamExplorJitter = 1:size(ParamExplor_Jitter,2)
             Ts_V = nan(LAll_N,100);
             
             
-            x = 0.1:0.1:10;
-            y = gaussmf(x,[0.03 5])*5;%*10
+            y = [zeros(1,49) 5 zeros(1,50)]; 
+            
+            %x = 0.1:0.1:10;
+            %y = gaussmf(x,[0.03 5])*5;
             if strcmp(InputType,'Inhibitory')
                 y = -y;
             end
