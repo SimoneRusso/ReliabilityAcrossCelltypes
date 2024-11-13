@@ -245,7 +245,7 @@ TimeWindow(TimeWindow==0) = 25;
 TimeWindow = TimeWindow/1000;
 %imagesc(NSpikes)
 fig = figure
-plot(nanmean(NSpikes,2))
+plot([0:50],nanmean(NSpikes,2))
 %plot(nanmean(NSpikes./TimeWindow,2))
 %plot(nanmean(NSpikes,2)./0.025)
 
@@ -413,7 +413,7 @@ TimeWindow = TimeWindow/1000;
 %imagesc(NSpikes)
 fig = figure
 %plot(nanmean(NSpikes,2)./0.025)
-plot(nanmean(NSpikes,2))
+plot([0:50],nanmean(NSpikes,2))
 
 fig2 = figure
 plot(ParamExplor_Jitter,nanmean(Integral,2))
