@@ -1,0 +1,1 @@
+Code for the pubblication "Spike reliability is cell type specific and shapes excitation and inhibition in the cortex" from S. Russo, G. B. Stanley, F. Najafi (https://doi.org/10.1038/s41598-024-82536-y)
